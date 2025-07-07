@@ -91,7 +91,7 @@ header p {
 #portfolio h2 {
   text-align: center;
   font-weight: 700;
-  color: red;
+  color: #FF8C00;
   margin-bottom: 40px;
 }
 #portfolio .img-thumbnail {
@@ -112,7 +112,7 @@ header p {
 }
 #achievements h2 {
   font-weight: 700;
-  color: red;
+  color: #FF8C00;
   margin-bottom: 30px;
 }
 .achievement {
@@ -209,7 +209,7 @@ header p {
 #contact h2 {
   text-align: center;
   font-weight: 700;
-  color: red;
+  color: #FF8C00;
   margin-bottom: 40px;
 }
 #contact .contact-info {
