@@ -82,13 +82,187 @@ header p {
 #about h2 {
   font-weight: 700;
   margin-bottom: 20px;
-
-
 }
 #about p {
   line-height: 1.6;
   font-size: 1rem;
 }
+
+
+
+/* Services Section */
+#services {
+  margin-bottom: 50px;
+}
+#services h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #FF8C00;
+  margin-bottom: 40px;
+}
+.service-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  transition: box-shadow 0.3s ease;
+  padding: 20px;
+  background: white;
+  height: 100%;
+}
+.service-card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+.service-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.service-card h5 {
+  color: #005f99;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+/* Time Line */
+
+.timeline-row {
+  position: relative;
+}
+.timeline-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: #002E5C; 
+  transform: translateX(-50%);
+}
+
+.timeline-left, .timeline-right {
+  padding: 0 30px;
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+  padding: 20px;
+  background: #f8fafc; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-left: 3px solid #002E5C; 
+}
+
+/* Left side items */
+.timeline-left .timeline-item::before {
+  content: '';
+  position: absolute;
+  right: -31.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #002E5C; 
+  border-radius: 50%;
+  z-index: 2;
+  border: 3px solid #f8fafc; 
+}
+
+.timeline-left .timeline-item::after {
+  content: '';
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #002E5C; 
+  transform: translateY(-50%);
+}
+
+/* Right side items */
+.timeline-right .timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -31.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color:#002E5C; 
+  z-index: 2;
+  border: 3px solid #002E5C; 
+}
+
+.timeline-right .timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -21px;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #002E5C; 
+  transform: translateY(-50%);
+}
+
+
+.timeline-item h5 {
+  color: #64748b; 
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.timeline-item h4 {
+  color: #1e293b; 
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.timeline-item p {
+  color: #475569; 
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .timeline-row::before {
+    left: 20px;
+  }
+  
+  .timeline-left, .timeline-right {
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+  
+  .timeline-left .timeline-item::before,
+  .timeline-right .timeline-item::before {
+    left: -40px;
+    right: auto;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .timeline-left .timeline-item::after,
+  .timeline-right .timeline-item::after {
+    left: -30px;
+    right: auto;
+    width: 10px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+  }
+}
+
+
+
 /* Portfolio Section */
 #portfolio {
   margin-bottom: 50px;
@@ -130,42 +304,12 @@ header p {
   color: #555;
   margin-top: 8px;
 }
-/* Services Section */
-#services {
-  margin-bottom: 50px;
-}
-#services h2 {
-  text-align: center;
-  font-weight: 700;
-  color: #FF8C00;
-  margin-bottom: 40px;
-}
-.service-card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-  transition: box-shadow 0.3s ease;
-  padding: 20px;
-  background: white;
-  height: 100%;
-}
-.service-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-}
-.service-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-.service-card h5 {
-  color: #005f99;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.service-card p {
-  font-size: 0.95rem;
-  color: #555;
-}
+
+
+
+
+
+
 /* Testimonial Section */
 .tes {
   text-align: center;
@@ -277,4 +421,6 @@ footer a {
 footer a:hover {
   color: #0074cc;
 }
+
+
 
