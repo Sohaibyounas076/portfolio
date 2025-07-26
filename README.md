@@ -41,19 +41,17 @@ portfolio/
 
 Homepage Preview:
 
-![Portfolio Screenshot](images/screenshot.png)
+![Portfolio Screenshot](https://github.com/Sohaibyounas076/portfolio/blob/master/img/github%20portfolio.png)
 
-> 💡 *You can replace `images/screenshot.png` with your actual screenshot file.*
 
----
 
 ## 📩 Contact
 
 Want to hire or collaborate with me? Feel free to reach out:
 
 - 🌐 **Portfolio**: [https://sohaibyounas076.github.io/portfolio/](https://sohaibyounas076.github.io/portfolio/)  
-- 📧 **Email**: youremail@example.com  
-- 🧑‍💼 **Fiverr**: [https://fiverr.com/yourusername](https://fiverr.com/yourusername)
+- 📧 **Email**: sohaibyounas077@gmail.com  
+- 🧑‍💼 **Lindin**: [https://Linkedin.com/sohaibyounas076](https://www.linkedin.com/in/sohaibyounas076/)
 
 ---
 
@@ -67,5 +65,3 @@ I'm **Sohaib Younas**, a passionate freelance web designer specializing in moder
 
 This project will be continuously updated with my latest work, and serves as a professional online presence for freelance clients.
 
-
-![logo](https://github.com/Sohaibyounas076/portfolio/blob/master/img/github%20portfolio.png)
