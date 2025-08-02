@@ -14,6 +14,11 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
+  <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -86,46 +91,69 @@
 </section>
 
 <!-- Services Section -->
-<section id="services" class="container">
-  <h2>Services</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="img/web.png" height="250" width="200" alt="Web Design" />
-        <h5>Custom Web Design</h5>
-        <p>Crafting sleek, modern, and fully responsive websites using HTML5, CSS3, and Bootstrap — designed to elevate your brand and deliver an exceptional user experience.</p>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-heading">My Expertise</h2>
+    <div class="row g-4">
+
+      <!-- Web Design -->
+      <div class="col-md-3" data-aos="zoom-in">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon web-design"><i class="fas fa-paintbrush fa-2x"></i></div>
+            <h5 class="card-title">Web Design</h5>
+            <p class="card-text">I design unique and responsive websites using WordPress, Wix, or custom code tailored to your brand identity.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="img/wordpress.png" height="250" width="" alt="Web Design" />
-        <h5>Web Design Using CMS</h5>
-        <p>Designing stunning, dynamic, and easy-to-manage websites with WordPress CMS, powered by the Elementor plugin — bringing your brand’s vision to life with simplicity and style.</p>
+
+      <!-- Web Development -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon web-dev"><i class="fas fa-code fa-2x"></i></div>
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">I build interactive and scalable sites using HTML5, CSS3, Bootstrap, and PHP for robust performance.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="img/shopify.png" height="250" width="200" alt="Shopify" />
-        <h5>Shopify Expert</h5>
-        <p>Set up, customize and optimize your Shopify store to maximize sales and conversions.</p>
+
+      <!-- eCommerce -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon ecommerce"><i class="fas fa-cart-shopping fa-2x"></i></div>
+            <h5 class="card-title">eCommerce Solutions</h5>
+            <p class="card-text">I manage full Shopify stores and build WooCommerce sites on WordPress, optimized for sales and performance.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="img/seo.png" height="250" width="200" alt="SEO" />
-        <h5>SEO Optimization</h5>
-        <p>Improve your website ranking with effective SEO strategies and content optimization.</p>
+
+      <!-- Digital Marketing -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon marketing"><i class="fas fa-bullhorn fa-2x"></i></div>
+            <h5 class="card-title">Digital Marketing</h5>
+            <p class="card-text">I grow businesses using targeted SEO, strategic content planning, and platform-specific marketing campaigns.</p>
+          </div>
+        </div>
       </div>
+
     </div>
-    <div class="col-md-4">
-      <div class="service-card">
-        <img src="img/digi.png" height="250" width="200" alt="SEO" />
-        <h5>Digital Marketing</h5>
-        <p>Boost your business growth with result-driven digital marketing strategies and targeted campaigns.</p>
-      </div>
-    </div>
-    </div>
+  </div>
 </section>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 800 });
+</script>
+
+
+
+
 <!-- Time Line -->
 
 <section class="container my-5">
@@ -174,46 +202,169 @@
   </div>
 </section>
 
+<!-- Tab Contents -->
+ <div class="container tab-section py-5">
+    <h2 class="section-title">Explore My Work</h2>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="projectTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab">Web Design</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="woo-tab" data-bs-toggle="tab" data-bs-target="#woo" type="button" role="tab">WooCommerce</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo" type="button" role="tab">SEO</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-4" id="projectTabsContent">
+      <div class="tab-pane fade show active" id="web" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+          	<div class="img-card"><img src="img/project1.png" class="img-thumbnail" alt="Project 1" />
+          </div>
+      </div>
+          <div class="col-md-4">
+          	<div class="img-card"><img src="img/project2.png" class="img-thumbnail" alt="Project 2" />
+          	</div>
+          </div>
+          <div class="col-md-4">
+          	<div class="img-card"><img src="img/project3.png" class="img-thumbnail" alt="Project 3" />
+          	</div></div>
+          	<div class="col-md-4">
+          	<div class="img-card"><img src="img/project4.png" class="img-thumbnail" alt="Project 4" />
+          	</div></div>
+          	<div class="col-md-4">
+          	<div class="img-card"><img src="img/project5.png" class="img-thumbnail" alt="Project 5" />
+          	</div></div>
+          	<div class="col-md-4">
+          	<div class="img-card"><img src="img/project6.png" class="img-thumbnail" alt="Project 6" />
+          	</div></div>
+          	<div class="col-md-4">
+          	<div class="img-card"><img src="img/project7.png" class="img-thumbnail" alt="Project 7" />
+          	</div></div>
+          	<div class="col-md-4">
+          	<div class="img-card"><img src="img/project8.png" class="img-thumbnail" alt="Project 8" />
+          	</div></div>
+          	<div class="col-md-4">
+          	<div class="img-card"><img src="img/project9.png" class="img-thumbnail" alt="Project 9" />
+          	</div></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="woo" role="tabpanel">
+        <div class="row g-4">
+        </div>
+      </div>
+      <div class="tab-pane fade" id="seo" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo1.PNG" alt="SEO 1" class="img-fluid"></div></div>
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo2.PNG" alt="SEO 2" class="img-fluid"></div></div>
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo3.PNG" alt="SEO 3" class="img-fluid"></div></div>
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo4.PNG" alt="SEO 4" class="img-fluid"></div></div>
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo5.PNG" alt="SEO 5" class="img-fluid"></div></div>
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo6.JPG" alt="SEO 6" class="img-fluid"></div></div>
+          <div class="col-md-4"><div class="img-card"><img src="img/Seo7.PNG" alt="SEO 7" class="img-fluid"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
 
 
+<!-- Recent Porjects Section -->
 
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-heading">Recently Completed Projects</h2>
+    <div class="row g-4">
 
+      <!-- GB Tourism -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon mb-3"><i class="fas fa-hotel fa-2x text-primary"></i></div>
+            <h5 class="card-title">GB Tourism</h5>
+            <p class="card-text">A hotel booking system for Gilgit Baltistan built using PHP & MySQL, designed as an MSc final year academic project.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://github.com/Sohaibyounas076/GB-Tourism" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Trade Store -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon mb-3"><i class="fas fa-store fa-2x text-success"></i></div>
+            <h5 class="card-title">Trade Store</h5>
+            <p class="card-text">A WooCommerce store built using WordPress and Elementor, customized for a client found via LinkedIn.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://github.com/Sohaibyounas076/Trade-Store" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- The Ladies Brand -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon mb-3"><i class="fas fa-female fa-2x text-danger"></i></div>
+            <h5 class="card-title">The Ladies Brand</h5>
+            <p class="card-text">A modern lingerie eCommerce site built on WordPress and WooCommerce for a Fiverr client with mobile responsiveness.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://github.com/Sohaibyounas076/Ladies-Brand" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="container">
-  <h2>Portfolio</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <img src="img/project1.png" class="img-thumbnail" alt="Project 1" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project2.png" class="img-thumbnail" alt="Project 2" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project3.png" class="img-thumbnail" alt="Project 3" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project4.png" class="img-thumbnail" alt="Project 3" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project5.png" class="img-thumbnail" alt="Project 3" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project6.png" class="img-thumbnail" alt="Project 3" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project7.png" class="img-thumbnail" alt="Project 3" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project8.png" class="img-thumbnail" alt="Project 3" />
-    </div>
-    <div class="col-md-4">
-      <img src="img/project9.png" class="img-thumbnail" alt="Project 3" />
+      <!-- Dar-Ul-Quraan Academy -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon mb-3"><i class="fas fa-book-quran fa-2x text-warning"></i></div>
+            <h5 class="card-title">Dar-Ul-Quraan Academy</h5>
+            <p class="card-text">An Islamic website for teaching Quran courses online, developed using WordPress with an educational layout.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://github.com/Sohaibyounas076/Dar-Ul-Quraan-Academy" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Travel Website -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-custom text-center">
+          <div class="card-body">
+            <div class="icon mb-3"><i class="fas fa-map-location-dot fa-2x text-info"></i></div>
+            <h5 class="card-title">Travel Website</h5>
+            <p class="card-text">A fully responsive travel platform showcasing destinations and packages with clean UI for a better user experience.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="https://github.com/Sohaibyounas076/Travel-Website" class="custom-btn" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+
+
+
+
 
 <!-- Achievements Section -->
 <section id="achievements" class="container">
@@ -300,7 +451,10 @@
     </div>
   </div>
 </section>
-  
+
+
+
+
 <!-- Footer -->
 <footer>
           &copy; 2025 Sohaib Younas | Ready to start your project? <a href="#contact">Let’s connect!</a>
