@@ -57,7 +57,7 @@ header p {
 
 .btn-hire:hover {
    background: #002E5C;
-  color: #0074cc !important;
+  color: white !important;
   
 }
 .header-img {
@@ -67,7 +67,7 @@ header p {
 }
 /* About Section */
 #about {
-  background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
+  background: #002E5C;
   color: white;
   padding: 50px 30px;
   border-radius: 15px;
@@ -91,41 +91,39 @@ header p {
 
 
 /* Services Section */
-#services {
-  margin-bottom: 50px;
-}
-#services h2 {
-  text-align: center;
+
+.section-heading {
   font-weight: 700;
-  color: #FF8C00;
-  margin-bottom: 40px;
-}
-.service-card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
-  transition: box-shadow 0.3s ease;
-  padding: 20px;
-  background: white;
-  height: 100%;
-}
-.service-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-}
-.service-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-.service-card h5 {
-  color: #005f99;
-  font-weight: 700;
+  font-size: 2.8rem;
   margin-bottom: 10px;
+  color: #FF8C00;
 }
-.service-card p {
-  font-size: 0.95rem;
-  color: #555;
+
+.shadow-custom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
 }
+
+.shadow-custom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Color Classes */
+.icon i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon i {
+  transform: scale(1.2);
+}
+
+/* Individual Icon Colors */
+.icon.web-design i { color: #007BFF; }       /* Blue for design */
+.icon.web-dev i { color: #28A745; }          /* Green for development */
+.icon.ecommerce i { color: #FFC107; }        /* Amber for commerce */
+.icon.marketing i { color: #DC3545; }        /* Red for marketing */
+
 
 
 /* Time Line */
@@ -263,27 +261,115 @@ header p {
 
 
 
-/* Portfolio Section */
-#portfolio {
-  margin-bottom: 50px;
+/* tabs Section */
+.tab-section {
+  background-color: #f9f9f9;
 }
-#portfolio h2 {
-  text-align: center;
+
+.section-title {
+  font-size: 2.5rem;
   font-weight: 700;
   color: #FF8C00;
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 30px;
 }
-#portfolio .img-thumbnail {
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  
+  font-weight: 600;
+  border-radius: 5px 5px 0 0;
+  margin: 0 5px;
+  transition: all 0.3s ease;
   border: none;
+}
+
+.nav-tabs .nav-link.active {
+background-color: #002E5C;  
+ color: white;
+}
+
+.tab-content {
+  padding-top: 20px;
+}
+
+.img-card {
+  overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-#portfolio .img-thumbnail:hover {
+
+.img-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.img-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img-card:hover img {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
+
+
+
+
+
+
+/* Recent Projects */
+
+.section-heading {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #FF8C00;
+}
+
+.shadow-custom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+}
+
+.shadow-custom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card .icon i {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon i {
+  transform: scale(1.2);
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  background: #002E5C;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+  background: #014183;
+}
+
+
+
+
 /* Achievements Section */
 #achievements {
   text-align: center;
@@ -421,6 +507,4 @@ footer a {
 footer a:hover {
   color: #0074cc;
 }
-
-
 
