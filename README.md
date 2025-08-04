@@ -46,7 +46,7 @@ portfolio/
 
 Homepage Preview:
 
-![Portfolio Screenshot](https://github.com/Sohaibyounas076/portfolio/blob/master/img/github%20portfolio.png)
+![Portfolio Screenshot](img/github%20portfolio.png)
 
 
 
