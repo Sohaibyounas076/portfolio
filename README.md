@@ -15,6 +15,14 @@ I'm **Sohaib Younas**, a passionate freelance web designer specializing in moder
 
 ---
 
+## 📸 Screenshots
+
+Homepage Preview:
+
+![Portfolio Screenshot](img/updatedportolio.png)
+
+....
+
 ## 🛠️ Technologies Used
 
 - HTML5  
@@ -31,24 +39,12 @@ portfolio/
 │
 ├── css/
 │   └── style.css
-├── images/
-│   └── (all images + screenshot.png)
 ├── index.html
-├── about.html
-├── services.html
-├── contact.html
+     └── html5
+├── imag/
+│   └── (all images + screenshot.png)
 └── README.md
 ```
-
----
-
-## 📸 Screenshots
-
-Homepage Preview:
-
-![Portfolio Screenshot](img/updatedportolio.png)
-
-
 
 ## 📩 Contact
 
