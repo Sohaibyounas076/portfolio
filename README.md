@@ -1,15 +1,17 @@
-# Sohaib Younas – Web Designer Portfolio
+# Sohaib Younas – Creative Web Designer | SEO Specialist & Digital Marketer  Portfolio:
 
 A modern, clean, and fully responsive portfolio website built to showcase my web design skills and freelance services. This site includes a project showcase, service highlights, and a contact section for potential clients. Designed using HTML5, CSS3, and Bootstrap, and hosted via GitHub Pages.
 
 ---
-## 👨‍💻 About Me
+## 👨‍💻 About Me:
 
-I'm **Sohaib Younas**, a passionate freelance web designer specializing in modern, responsive web development using tools like WordPress, Shopify, and Bootstrap. I also offer services in SEO and digital branding. This portfolio includes a project I successfully delivered through Fiverr, reflecting my real client experience and design capabilities.
+I hold a Bachelor’s degree in Computer Science and currently work as a Police Station Assistant (PSA) in Punjab Police, where I handle data entry and administrative tasks. Alongside my job, I continue to grow my freelancing career with dedication and professionalism.
+
+I am a WordPress developer with 3+ years of experience, specializing in WordPress, Elementor Pro, Wix, Shopify, HTML, CSS, and theme customization. I’ve successfully delivered projects for various clients, working with companies and freelancing on platforms like Upwork, Fiverr, and LinkedIn. My expertise ensures the creation of high-quality, responsive, and visually appealing websites tailored to meet client needs.
 
 ---
 
-## 🔗 Live Preview
+## 🔗 Live Preview of Portfolio:
 
 👉 [https://sohaibyounas076.github.io/portfolio/](https://sohaibyounas076.github.io/portfolio/)
 
