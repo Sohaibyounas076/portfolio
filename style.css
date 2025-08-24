@@ -34,32 +34,44 @@ header p {
   letter-spacing: 0.05em;
 }
 
-.social-icons a {
-  font-size: 1.8rem;
-  color: #0074cc;
-  margin-right: 18px;
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
+/*social media btn*/
+        
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            height: 100%;
+            margin-right: 25px; 
+        }
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
 
-.btn-hire {
-  display: inline-block;
-  padding: 12px 30px;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 50px; 
-  background: #002E5C;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
+        .btn-email {
+            background: linear-gradient(45deg, #D44638, #EA4335);
+        }
+        
+        .btn-linkedin {
+            background: linear-gradient(45deg, #0072b1, #00a0dc);
+        }
+        
+        .btn-facebook {
+            background: linear-gradient(45deg, #3b5998, #1877f2);
+        }
+        
+        .btn-cv {
+            background: linear-gradient(45deg, #3b5990, #1877f3);
+        }
 
-.btn-hire:hover {
-   background: #002E5C;
-  color: white !important;
-  
-}
+
 .header-img {
   max-width: 280px;
   border-radius: 15px;
@@ -67,7 +79,7 @@ header p {
 }
 /* About Section */
 #about {
-  background: #002E5C;
+  background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
   color: white;
   padding: 50px 30px;
   border-radius: 15px;
@@ -88,7 +100,93 @@ header p {
   font-size: 1rem;
 }
 
+/* Social Media Buttons */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
 
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none;
+  border: none;
+  min-width: 140px;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.social-btn i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Email - Gmail Red */
+.btn-email {
+  background: linear-gradient(to right, #DB4437, #D44638);
+}
+
+.btn-email:hover {
+  background: linear-gradient(to right, #C03A2D, #B83C2F);
+}
+
+/* LinkedIn - Official Blue */
+.btn-linkedin {
+  background: linear-gradient(to right, #0077B5, #00669C);
+}
+
+.btn-linkedin:hover {
+  background: linear-gradient(to right, #00669C, #005983);
+}
+
+/* Facebook - Official Blue */
+.btn-facebook {
+  background: linear-gradient(to right, #4267B2, #3B5998);
+}
+
+.btn-facebook:hover {
+  background: linear-gradient(to right, #3B5998, #344E86);
+}
+
+/* Instagram - Purple to Orange Gradient */
+.btn-cv {
+  background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+  .social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .social-btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .social-buttons {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Services Section */
 
@@ -124,8 +222,6 @@ header p {
 .icon.ecommerce i { color: #FFC107; }        /* Amber for commerce */
 .icon.marketing i { color: #DC3545; }        /* Red for marketing */
 
-
-
 /* Time Line */
 
 .timeline-row {
@@ -150,7 +246,7 @@ header p {
   margin-bottom: 50px;
   position: relative;
   padding: 20px;
-  background: #f8fafc; 
+  background: white; 
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-left: 3px solid #002E5C; 
@@ -259,8 +355,6 @@ header p {
   }
 }
 
-
-
 /* tabs Section */
 .tab-section {
   background-color: #f9f9f9;
@@ -318,12 +412,6 @@ background-color: #002E5C;
   transform: scale(1.05);
 }
 
-
-
-
-
-
-
 /* Recent Projects */
 
 .section-heading {
@@ -367,9 +455,6 @@ background-color: #002E5C;
   background: #014183;
 }
 
-
-
-
 /* Achievements Section */
 #achievements {
   text-align: center;
@@ -391,11 +476,6 @@ background-color: #002E5C;
   margin-top: 8px;
 }
 
-
-
-
-
-
 /* Testimonial Section */
 .tes {
   text-align: center;
@@ -414,7 +494,7 @@ background-color: #002E5C;
     }
     .testimonial-item {
       min-width: 300px;
-      background-color: #f8f9fa;
+      background-color: white;
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -484,11 +564,11 @@ background-color: #002E5C;
   font-weight: 700;
   border-radius: 50px;
   width: 100%;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 #contact form button:hover {
-  background-color: #002E5C;
-  color: #0074cc;
+   background: #014183;;
+  color: white;
 }
 /* Footer */
 footer {
@@ -507,4 +587,3 @@ footer a {
 footer a:hover {
   color: #0074cc;
 }
-
