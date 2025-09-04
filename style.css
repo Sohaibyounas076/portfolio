@@ -32,74 +32,12 @@ header p {
   font-size: 1.3rem;
   margin-bottom: 25px;
   letter-spacing: 0.05em;
-}
-
-/*social media btn*/
-        
-        .social-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            text-align: center;
-            height: 100%;
-            margin-right: 25px; 
-        }
-        .social-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            color: white;
-        }
-
-        .btn-email {
-            background: linear-gradient(45deg, #D44638, #EA4335);
-        }
-        
-        .btn-linkedin {
-            background: linear-gradient(45deg, #0072b1, #00a0dc);
-        }
-        
-        .btn-facebook {
-            background: linear-gradient(45deg, #3b5998, #1877f2);
-        }
-        
-        .btn-cv {
-            background: linear-gradient(45deg, #3b5990, #1877f3);
-        }
-
-
+} 
 .header-img {
   max-width: 280px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
-/* About Section */
-#about {
-  background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
-  color: white;
-  padding: 50px 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  margin-bottom: 50px;
-}
-#about img {
-  border-radius: 15px;
-  max-width: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-#about h2 {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-#about p {
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
 /* Social Media Buttons */
 .social-buttons {
   display: flex;
@@ -167,25 +105,28 @@ header p {
   background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
 }
 
-/* Responsive adjustments for buttons */
-@media (max-width: 768px) {
-  .social-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-  
-  .social-btn {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 1rem;
-  }
-}
 
-@media (max-width: 380px) {
-  .social-buttons {
-    grid-template-columns: 1fr;
-  }
+/* About Section */
+#about {
+  background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
+  color: white;
+  padding: 50px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin-bottom: 50px;
+}
+#about img {
+  border-radius: 15px;
+  max-width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+#about h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#about p {
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* Services Section */
@@ -195,7 +136,18 @@ header p {
   font-size: 2.8rem;
   margin-bottom: 10px;
   color: #FF8C00;
+
 }
+.card-title {
+  color: #1e293b;
+  font-weight: 600;
+}
+.card-text{
+  color: #475569; 
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 
 .shadow-custom {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -356,9 +308,7 @@ header p {
 }
 
 /* tabs Section */
-.tab-section {
-  background-color: #f9f9f9;
-}
+
 
 .section-title {
   font-size: 2.5rem;
@@ -373,8 +323,8 @@ header p {
 }
 
 .nav-tabs .nav-link {
-  
-  font-weight: 600;
+  color: #1e293b;
+  font-weight: 800;
   border-radius: 5px 5px 0 0;
   margin: 0 5px;
   transition: all 0.3s ease;
@@ -396,21 +346,29 @@ background-color: #002E5C;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+  .image-container {
+      width: 100%;
+      height: 350px;             /* fixed height */
+      overflow: hidden;          /* extra image hide */
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      position: relative;
+      cursor: pointer;
+    }
 
-.img-card img {
-  width: 100%;
-  display: block;
-  transition: transform 0.4s ease;
-}
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 5s ease-in-out;
+      transform: translateY(0);  /* start at top */
+    }
 
-.img-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
+    .image-container:hover img {
+      /* Calculate scroll distance based on image height */
+      transform: translateY(calc(350px - 100%));
+    }
 
-.img-card:hover img {
-  transform: scale(1.05);
-}
 
 /* Recent Projects */
 
@@ -471,8 +429,9 @@ background-color: #002E5C;
   color: #005f99;
 }
 .achievement-desc {
-  font-weight: 500;
-  color: #555;
+  color: #475569; 
+  font-size: 0.95rem;
+  line-height: 1.5;
   margin-top: 8px;
 }
 
