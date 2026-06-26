@@ -91,13 +91,10 @@ header p {
   background: linear-gradient(to right, #00669C, #005983);
 }
 
-/* Facebook - Official Blue */
-.btn-facebook {
-  background: linear-gradient(to right, #4267B2, #3B5998);
-}
 
-.btn-facebook:hover {
-  background: linear-gradient(to right, #3B5998, #344E86);
+/* WhatsApp - Official Green */
+.btn-whatsapp {
+  background: linear-gradient(to right, #25D366, #128C7E);
 }
 
 /* Instagram - Purple to Orange Gradient */
