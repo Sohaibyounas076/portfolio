@@ -7,7 +7,7 @@ A modern, clean, and fully responsive portfolio website built to showcase my web
 
 I hold a Bachelor’s degree in Computer Science and currently work as a Police Station Assistant (PSA) in Punjab Police, where I handle data entry and administrative tasks. Alongside my job, I continue to grow my freelancing career with dedication and professionalism.
 
-I am a WordPress developer with 3+ years of experience, specializing in WordPress, Elementor Pro, Wix, Shopify, HTML, CSS, and theme customization. I’ve successfully delivered projects for various clients, working with companies and freelancing on platforms like Upwork, Fiverr, and LinkedIn. My expertise ensures the creation of high-quality, responsive, and visually appealing websites tailored to meet client needs.
+I am a WordPress developer with 4+ years of experience, specializing in WordPress, Elementor Pro, Wix, Shopify, HTML, CSS, and theme customization. I’ve successfully delivered projects for various clients, working with companies and freelancing on platforms like Upwork, Fiverr, and LinkedIn. My expertise ensures the creation of high-quality, responsive, and visually appealing websites tailored to meet client needs.
 
 ---
 
