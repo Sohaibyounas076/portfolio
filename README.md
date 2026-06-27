@@ -43,8 +43,8 @@ portfolio/
 │   └── style.css
 ├── index.html
      └── html5
-├── imag/
-│   └── (all images + screenshot.png)
+├── img/
+│   └── (all images + screenshots)
 └── README.md
 ```
 
