@@ -26,6 +26,10 @@
   <meta property="og:image" content="https://sohaibyounas076.github.io/portfolio/screenshot.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#001f3f">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
@@ -154,7 +158,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
     <div class="row g-4">
 
     	<!-- Web Development -->
-      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon web-dev"><i class="fas fa-code fa-2x"></i></div>
@@ -165,7 +169,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
       </div>
 
       <!-- Web Design -->
-      <div class="col-md-3" data-aos="zoom-in">
+      <div class="col-6 col-md-3" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon web-design"><i class="fas fa-paintbrush fa-2x"></i></div>
@@ -176,7 +180,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
       </div> 
 
       <!-- eCommerce -->
-      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon ecommerce"><i class="fas fa-cart-shopping fa-2x"></i></div>
@@ -186,7 +190,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
         </div>
       </div>
       <!-- SEO Card -->
-<div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+<div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
   <div class="card h-100 shadow-custom text-center">
     <div class="card-body">
       <div class="icon seo"><i class="fas fa-search fa-2x" style="color:#6a5acd;"></i></div>
@@ -197,7 +201,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
 </div>
 
       <!-- Digital Marketing -->
-      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon marketing"><i class="fas fa-bullhorn fa-2x"></i></div>
@@ -207,7 +211,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
         </div>
       </div>
 <!-- UI/UX Design Card -->
-<div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+<div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
   <div class="card h-100 shadow-custom text-center">
     <div class="card-body">
       <div class="icon uiux"><i class="fas fa-pencil-ruler fa-2x" style="color:#ff69b4;"></i></div>
@@ -363,19 +367,116 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
           </div>
           </div>
         </div>
-      <div class="tab-pane fade" id="seo" role="tabpanel">
-        <div class="row g-4">
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo1.png" alt="Beem Sport Site  Google Results Appearing on Top" class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo2.png" alt="Beem Sport Site  Visit's Results " class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo3.png" alt="EMS  site Google Results Appearing on Top" class="img-fluid"></div></div>
-           <div class="col-md-4"><div class="img-card"><img src="img/Seo5.png" alt="EMS  Site  Visit's Results " class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo4.png" alt="Juerg site  Google Results Appearing on Top" class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo6.jpg" alt="THE nutrition king  Site Visit's Results" class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/After_Seo_the_king_site.png" alt="THE nutrition king  Site seo result" class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo7.png" alt="Regency Wraps site Results Appearing on Top" class="img-fluid"></div></div>
-          <div class="col-md-4"><div class="img-card"><img src="img/Seo8.png" alt="THE nutrition king Site Click Results on google " class="img-fluid"></div></div>
+        <!-- SEO Tab Content -->
+<div class="tab-pane fade" id="seo" role="tabpanel">
+  <div class="seo-case-grid">
+    <!-- Beem Sports -->
+    <div class="seo-case">
+      <div class="seo-case-images">
+        <img src="img/Seo1.png" alt="Beem Sports Google search ranking results" onclick="openSeoLightbox(this.src, this.alt)">
+        <img src="img/Seo2.png" alt="Beem Sports website active users analytics" onclick="openSeoLightbox(this.src, this.alt)">
+      </div>
+      <div class="seo-case-body">
+        <h5>Beem Sports - Live Sports Streaming</h5>
+        <p>Took this live sports streaming platform from no visibility to Google's first page for competitive cricket and live-sports keywords, while improving session time and lowering bounce rate.</p>
+        <div class="seo-stats">
+          <span class="seo-stat">65,000+ Pageviews</span>
+          <span class="seo-stat">1st Page Ranking</span>
         </div>
       </div>
+    </div>
+    <!-- EMS Tutoring -->
+    <div class="seo-case">
+      <div class="seo-case-images">
+        <img src="img/Seo3.png" alt="EMS Tutoring Google search ranking results" onclick="openSeoLightbox(this.src, this.alt)">
+        <img src="img/Seo5.png" alt="EMS Tutoring website visitor analytics" onclick="openSeoLightbox(this.src, this.alt)">
+      </div>
+      <div class="seo-case-body">
+        <h5>EMS Tutoring - Online Tutoring (UK)</h5>
+        <p>Moved this UK tutoring platform from low visibility to first-page Google rankings through on-page optimization, schema, local SEO, and backlink building.</p>
+        <div class="seo-stats">
+          <span class="seo-stat">+13.9% Weekly Growth</span>
+          <span class="seo-stat">574+ Weekly Users</span>
+        </div>
+      </div>
+    </div>
+    <!-- The Nutrition King -->
+    <div class="seo-case">
+      <div class="seo-case-images">
+        <img src="img/Seo6.jpg" alt="The Nutrition King website traffic results" onclick="openSeoLightbox(this.src, this.alt)">
+        <img src="img/After_Seo_the_king_site.png" alt="The Nutrition King SEO score after optimization" onclick="openSeoLightbox(this.src, this.alt)">
+        <img src="img/Seo8.png" alt="The Nutrition King Google click results" onclick="openSeoLightbox(this.src, this.alt)">
+      </div>
+      <div class="seo-case-body">
+        <h5>The Nutrition King - Supplements Store</h5>
+        <p>Resolved 13 critical SEO issues on this WooCommerce supplements store, rebuilding metadata, page speed, and schema to bring the site to a near-perfect score.</p>
+        <div class="seo-stats">
+          <span class="seo-stat">96/100 SEO Score</span>
+          <span class="seo-stat">0 Critical Issues</span>
+        </div>
+      </div>
+    </div>
+    <!-- Regency Wraps -->
+    <div class="seo-case">
+      <div class="seo-case-images">
+        <img src="img/Seo7.png" alt="Regency Wraps Google search ranking results" onclick="openSeoLightbox(this.src, this.alt)">
+      </div>
+      <div class="seo-case-body">
+        <h5>Regency Wraps - Gourmet Retail Brand</h5>
+        <p>Strengthened the search presence of this cooking accessories brand, established since 1985, using technical SEO and backlinks, growing visibility within a single week.</p>
+        <div class="seo-stats">
+          <span class="seo-stat">+73% Impressions</span>
+          <span class="seo-stat">+23% Clicks</span>
+        </div>
+      </div>
+    </div>
+    <!-- Juerg Site -->
+    <div class="seo-case">
+      <div class="seo-case-images">
+        <img src="img/Seo4.png" alt="Juerg website Google search ranking results" onclick="openSeoLightbox(this.src, this.alt)">
+      </div>
+      <div class="seo-case-body">
+        <h5>Juerg Site</h5>
+        <p>Improved on-page SEO and keyword targeting to move this client's website onto Google's first page for its core search terms.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End SEO Section -->
+
+<!-- SEO Lightbox Modal -->
+<div class="seo-lightbox-overlay" id="seoLightboxOverlay" onclick="closeSeoLightbox(event)">
+  <span class="seo-lightbox-close" onclick="closeSeoLightbox(event)">&times;</span>
+  <img class="seo-lightbox-img" id="seoLightboxImg" src="" alt="">
+</div>
+
+<script>
+function openSeoLightbox(src, alt) {
+  var overlay = document.getElementById('seoLightboxOverlay');
+  var img = document.getElementById('seoLightboxImg');
+  img.src = src;
+  img.alt = alt;
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSeoLightbox(e) {
+  if (e.target.id === 'seoLightboxOverlay' || e.target.classList.contains('seo-lightbox-close')) {
+    document.getElementById('seoLightboxOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('seoLightboxOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+</script>
+
+<!-- End SEO Section -->
+
     </div>
   </div>
     
@@ -388,7 +489,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
     <div class="row g-4">
 
       <!-- GB Tourism -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-hotel fa-2x text-primary"></i></div>
@@ -401,7 +502,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
         </div>
       </div>
       <!-- The Nutrition King -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-dumbbell fa-2x text-primary"></i></div>
@@ -414,7 +515,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
         </div>
       </div>
        <!-- SEO -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
   <div class="card h-100 shadow-custom text-center">
     <div class="card-body">
       <div class="icon mb-3"><i class="fas fa-chart-line fa-2x text-success"></i></div>
@@ -429,7 +530,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
   </div>
 </div>
       <!-- Client Portfolio -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-id-badge fa-2x text-primary"></i></div>
@@ -443,7 +544,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
       </div>
 
       <!-- Men Fashion Store -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-male fa-2x text-success"></i></div>
@@ -457,7 +558,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
       </div>
 
       <!-- Trade Store -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-store fa-2x text-success"></i></div>
@@ -471,7 +572,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
       </div>
 
       <!-- The Ladies Brand -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-female fa-2x text-danger"></i></div>
@@ -485,7 +586,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
       </div>
 
       <!-- Dar-Ul-Quraan Academy -->
-      <div class="col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card h-100 shadow-custom text-center">
           <div class="card-body">
             <div class="icon mb-3"><i class="fas fa-book-quran fa-2x text-warning"></i></div>
@@ -511,15 +612,15 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
 <section id="achievements" class="container my-5">
   <h2 class="text-center section-heading">Achievements</h2>
   <div class="row text-center">
-    <div class="col-md-4">
+    <div class="col-4">
       <div class="achievement">145+</div>
       <div class="achievement-desc">Projects Completed</div>
     </div>
-    <div class="col-md-4">
+    <div class="col-4">
       <div class="achievement">100+</div>
       <div class="achievement-desc">Happy Clients</div>
     </div>
-    <div class="col-md-4">
+    <div class="col-4">
       <div class="achievement">4+</div>
       <div class="achievement-desc">Years Experience</div>
     </div>
@@ -534,77 +635,107 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"I have worked with many developers on Fiverr and Sohaib is by far the best in terms of communication and speed and is highly knowledgeable.<br><br>We will work together again in the near future. You will not be disappointed, give him a try."</p>
+        <p>"I have worked with many developers on Fiverr and Sohaib is by far the best in terms of communication and speed and is highly knowledgeable.We will work together again in the near future. You will not be disappointed, give him a try."</p>
       </div>
       <div class="testimonial-footer">
-        <h5>- franklegashler</h5>
-        <span>🇬🇧 United Kingdom</span>
+        <h5>franklegashler</h5>
+        <span>From United Kingdom</span>
+      </div>
+    </div>
+     <div class="testimonial-item">
+      <div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Professional and reliable SEO service. The monthly off page work was handled with great care. The backlinks are safe and effective for long term growth. I can see positive changes in my rankings already. Will continue working with Sohaib Younas."</p>
+      </div>
+      <div class="testimonial-footer">
+        <h5>giasunwhisper</h5>
+        <span> From United States</span>
+      </div>
+    </div>
+     <div class="testimonial-item">
+      <div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Sohaib Younas was absolutely fantastic! He developed our WordPress website with incredible attention to detail, and the results are exactly what we envisioned. His work is top-notch, and he was a pleasure to communicate with throughout the entire process. Highly recommend!"</p>
+      </div>
+      <div class="testimonial-footer">
+        <h5>fpastor</h5>
+        <span>From Ecuador</span>
+      </div>
+    </div>
+      <div class="testimonial-item">
+      <div>
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Excellent seo service with safe drip feed backlinks. My website authority is improving steadily and the white hat strategy gives me confidence for long term rankings."</p>
+      </div>
+      <div class="testimonial-footer">
+        <h5>christinahoov</h5>
+        <span>From Germany</span>
       </div>
     </div>
 
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"Was fantastic to work with. Everything from the quality of work to the communication was top notch.<br><br>I would absolutely recommend, and if I need another website done there is nowhere else I would consider going. 10/10."</p>
+        <p>"Was fantastic to work with. Everything from the quality of work to the communication was top notch.I would absolutely recommend, and if I need another website done there is nowhere else I would consider going. 10/10."</p>
       </div>
       <div class="testimonial-footer">
         <h5>- vaibhavawasthi5</h5>
-        <span>🇮🇳 India</span>
+        <span>From India</span>
       </div>
     </div>
 
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"Amazing job! Super prompt and responsive. Didn't know what to expect hiring him to help with some updates to my website, but he exceeded my expectations.<br><br>He even provided a demo video for me to reference in the future."</p>
+        <p>"Amazing job! Super prompt and responsive. Didn't know what to expect hiring him to help with some updates to my website, but he exceeded my expectations.He even provided a demo video for me to reference in the future."</p>
       </div>
       <div class="testimonial-footer">
         <h5>- juliettaylor22</h5>
-        <span>🇺🇸 United States</span>
+        <span>From United States</span>
       </div>
     </div>
 
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"Sohaib Younas made an incredible website for me. Several of my friends were really impressed. It looks extremely modern and user friendly.<br><br>His communication was very good considering the time difference, and he allowed several adjustments until I was happy."</p>
+        <p>"Sohaib Younas made an incredible website for me. Several of my friends were really impressed. It looks extremely modern and user friendly.His communication was very good considering the time difference, and he allowed several adjustments until I was happy."</p>
       </div>
       <div class="testimonial-footer">
         <h5>- normadevine</h5>
-        <span>🇫🇮 Finland</span>
+        <span>From Finland</span>
       </div>
     </div>
 
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"This seller got the job done. Very responsive even though we are on opposite sides of the world.<br><br>Very professional and will work with you until everything is completed."</p>
+        <p>"Rifat is a great developer. He has a great attention to detail, knows how to put your vision on screen and communicates very well. Furthermore his responses are quick and objective oriented. We would definitely recommend hiring Rifat."</p>
       </div>
       <div class="testimonial-footer">
-        <h5>- sairakhan954</h5>
-        <span>🇷🇴 Romania</span>
+        <h5>mck_consociati</h5>
+        <span>From United Kingdom</span>
       </div>
     </div>
 
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"Excellent seller, great results. Very professional and easy to work with.<br><br>A five-star experience, highly recommended."</p>
+        <p>"i have check many freelance website makers and i found him and when i check his work it looks amazing and then i decided to work with him..and now i would highly reccomend to anyone whos reading this review,his the best person for the job. his really polite , so genuine and he goes above beyound to make sure the customer is satisfied.. thank you"</p>
       </div>
       <div class="testimonial-footer">
-        <h5>- johnreave15</h5>
-        <span>🇬🇧 United Kingdom</span>
+        <h5>ammie17171</h5>
+        <span>From Maldives</span>
       </div>
     </div>
 
     <div class="testimonial-item">
       <div>
         <div class="testimonial-stars">★★★★★</div>
-        <p>"The experience has been great every step of the way. No job was too big.<br><br>His customer service, patience, and attention to detail have been unmatched. He knows what he's doing and gets it done every time."</p>
+        <p>"The experience has been great every step of the way. No job was too big.His customer service, patience, and attention to detail have been unmatched. He knows what he's doing and gets it done every time."</p>
       </div>
       <div class="testimonial-footer">
         <h5>- garrykanfer567</h5>
-        <span>🇺🇸 United States</span>
+        <span>From United States</span>
       </div>
     </div>
 
@@ -622,7 +753,7 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
         <h5>Phone</h5>
         <p>+923082896824</p>
         <h5>linkedin</h5>
-        <p>www.linkedin.com/in/sohaibyounas076/</p>
+        <p>linkedin.com/in/sohaibyounas076/</p>
       </div>
     </div>
     <div class="col-md-6 d-flex">
@@ -655,9 +786,3 @@ Whether you need a custom-coded website, a WordPress or Shopify store, or full S
 
 </body>
 </html>
-
-
-
-
-
-
