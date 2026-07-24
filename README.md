@@ -42,7 +42,9 @@ portfolio/
 ├── css/
 │   └── style.css
 ├── index.html
-     └── html5
+│     └── html5
+├── Script.js
+│     └── JavaScript
 ├── img/
 │   └── (all images + screenshots)
 └── README.md
