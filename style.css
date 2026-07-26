@@ -790,6 +790,20 @@ textarea:focus-visible {
   .timeline-left, .timeline-right { padding-left: 50px; padding-right: 15px; }
   .timeline-left .timeline-item::before,
   .timeline-right .timeline-item::before { left: -40px; right: auto; }
+
+  /* Tighter, more proportional vertical rhythm on phones */
+  .section { padding: 64px 0; }
+
+  /* Hero action buttons: a touch more breathing room so they don't feel packed edge-to-edge */
+  .social-buttons { gap: 10px; }
+  .social-btn { padding: 11px 18px; font-size: 0.9rem; }
+
+  /* Extra clearance below the contact cards so the fixed WhatsApp / back-to-top
+     buttons never sit on top of the last card's content */
+  .contact-highlights { margin-bottom: 84px; }
+
+  /* Recent Projects / Services cards: a little less bulky padding on phones */
+  .project-card { padding: 24px 18px !important; }
 }
 
 /* ---------------------------------------------------------------------
