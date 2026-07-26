@@ -46,6 +46,10 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-size: 18px; /* base bump for readability, up from browser default 16px */
+}
+@media (max-width: 575.98px) {
+  html { font-size: 16.5px; } /* smaller devices still get a size bump over default 16px, without overwhelming tight mobile layouts */
 }
 
 body {
@@ -128,7 +132,7 @@ textarea:focus-visible {
 .preloader-mark {
   font-family: var(--font-mono);
   color: var(--amber-500);
-  font-size: 0.95rem;
+  font-size: 1.01rem;
   letter-spacing: 0.15em;
   display: flex;
   align-items: center;
@@ -190,7 +194,7 @@ textarea:focus-visible {
 .site-nav .nav-link {
   color: rgba(255, 255, 255, 0.82) !important;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.01rem;
   margin: 0 6px;
   position: relative;
   padding: 6px 2px !important;
@@ -267,7 +271,7 @@ textarea:focus-visible {
 .hero-eyebrow {
   font-family: var(--font-mono);
   color: var(--amber-500);
-  font-size: 0.82rem;
+  font-size: 0.91rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   display: inline-flex;
@@ -329,7 +333,7 @@ textarea:focus-visible {
   padding: 12px 22px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.01rem;
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
   color: var(--white);
   text-decoration: none;
@@ -388,12 +392,12 @@ textarea:focus-visible {
   border-radius: 12px;
   padding: 12px 16px;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   color: var(--white);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
   animation: floatY 5s ease-in-out infinite;
 }
-.rank-card .rank-label { color: var(--slate-light); font-size: 0.68rem; letter-spacing: 0.06em; }
+.rank-card .rank-label { color: var(--slate-light); font-size: 0.82rem; letter-spacing: 0.06em; }
 .rank-card .rank-value { color: var(--success); font-weight: 700; font-size: 1rem; display: flex; align-items: center; gap: 6px; }
 .rank-sparkline { display: flex; align-items: flex-end; gap: 3px; height: 22px; margin-top: 6px; }
 .rank-sparkline span {
@@ -474,7 +478,7 @@ textarea:focus-visible {
 }
 .hero-trust-label {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.84rem;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 2px;
@@ -493,7 +497,7 @@ textarea:focus-visible {
 }
 .hero-trust-countries-label {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.87rem;
   color: rgba(255, 255, 255, 0.55);
   margin-right: 2px;
 }
@@ -502,7 +506,7 @@ textarea:focus-visible {
   align-items: center;
   gap: 4px;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.87rem;
   color: rgba(255, 255, 255, 0.85);
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -524,7 +528,7 @@ textarea:focus-visible {
   gap: 8px;
   color: rgba(255, 255, 255, 0.55);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   letter-spacing: 0.14em;
   text-decoration: none;
 }
@@ -566,7 +570,7 @@ textarea:focus-visible {
 .section-eyebrow {
   font-family: var(--font-mono);
   color: var(--amber-500);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   display: block;
@@ -651,7 +655,7 @@ textarea:focus-visible {
 }
 .about-stats-strip .mini-stat:hover b { color: var(--amber-500); transform: scale(1.12); }
 .about-stats-strip .mini-stat span {
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.55);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -722,7 +726,7 @@ textarea:focus-visible {
   font-size: 1.15rem;
   margin-bottom: 10px;
 }
-.card-text { color: var(--card-body); font-size: 0.94rem; margin: 0; }
+.card-text { color: var(--card-body); font-size: 1.0rem; margin: 0; }
 .project-card p { color: var(--card-body); }
 
 /* ---------------------------------------------------------------------
@@ -778,12 +782,12 @@ textarea:focus-visible {
   font-family: var(--font-mono);
   color: var(--amber-500);
   margin-bottom: 6px;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 .timeline-item h3 { color: var(--navy-900); margin-bottom: 8px; font-size: 1.12rem; font-weight: 700; }
-.timeline-item p { color: var(--card-body); font-size: 0.94rem; line-height: 1.55; margin: 0; }
+.timeline-item p { color: var(--card-body); font-size: 1.0rem; line-height: 1.55; margin: 0; }
 
 @media (max-width: 767.98px) {
   .timeline-row::before { left: 20px; }
@@ -796,7 +800,7 @@ textarea:focus-visible {
 
   /* Hero action buttons: a touch more breathing room so they don't feel packed edge-to-edge */
   .social-buttons { gap: 10px; }
-  .social-btn { padding: 11px 18px; font-size: 0.9rem; }
+  .social-btn { padding: 11px 18px; font-size: 0.96rem; }
 
   /* Extra clearance below the contact cards so the fixed WhatsApp / back-to-top
      buttons never sit on top of the last card's content */
@@ -804,19 +808,25 @@ textarea:focus-visible {
 
   /* Recent Projects / Services cards: a little less bulky padding on phones */
   .project-card { padding: 24px 18px !important; }
+
+  /* Project category tabs (Web Development / WooCommerce / SEO): smaller
+     padding and guaranteed gap so the three buttons never touch edge-to-edge */
+  .nav-tabs { gap: 8px; row-gap: 10px; }
+  .nav-tabs .nav-link { padding: 10px 16px; font-size: 0.94rem; }
 }
 
 /* ---------------------------------------------------------------------
    11. PROJECT TABS
    --------------------------------------------------------------------- */
-.nav-tabs { border-bottom: 1px solid rgba(255, 255, 255, 0.14); gap: 4px; }
+.nav-tabs { border-bottom: 1px solid rgba(255, 255, 255, 0.14); gap: 10px; flex-wrap: wrap; row-gap: 12px; }
 .nav-tabs .nav-link {
   color: rgba(255, 255, 255, 0.65);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.01rem;
   border-radius: 8px 8px 0 0;
   border: none;
   padding: 12px 22px;
+  margin-bottom: 4px;
   transition: all 0.25s var(--ease);
 }
 .nav-tabs .nav-link:hover { color: var(--white); background: rgba(255, 255, 255, 0.06); }
@@ -879,7 +889,7 @@ textarea:focus-visible {
   transition: transform 0.4s var(--ease-soft), box-shadow 0.4s var(--ease-soft);
 }
 .work-case:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(11, 37, 69, 0.16); }
-.work-case .image-container { height: 220px; --ic-height: 220px; }
+.work-case .image-container { height: 300px; --ic-height: 300px; }
 .work-case-body { padding: 20px 22px 24px; }
 .work-case-body h3 {
   font-family: var(--font-display);
@@ -891,7 +901,7 @@ textarea:focus-visible {
 .work-case-tag {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -902,12 +912,12 @@ textarea:focus-visible {
   border-radius: 30px;
   margin-bottom: 10px;
 }
-.work-case-body p { color: var(--card-body); font-size: 0.9rem; line-height: 1.55; margin-bottom: 14px; }
+.work-case-body p { color: var(--card-body); font-size: 0.96rem; line-height: 1.55; margin-bottom: 14px; }
 .work-case-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.85rem;
+  font-size: 0.94rem;
   font-weight: 700;
   color: var(--navy-900);
   text-decoration: none;
@@ -915,7 +925,7 @@ textarea:focus-visible {
 }
 .work-case-link:hover { color: var(--amber-500); gap: 10px; }
 @media (max-width: 575.98px) {
-  .work-case .image-container { height: 190px; --ic-height: 190px; }
+  .work-case .image-container { height: 250px; --ic-height: 250px; }
 }
 
 /* ---------------------------------------------------------------------
@@ -936,7 +946,7 @@ textarea:focus-visible {
   border-radius: 50px;
   padding: 12px 22px;
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   color: var(--navy-900);
   transition: transform 0.3s var(--ease-soft), box-shadow 0.3s var(--ease-soft), background 0.3s var(--ease-soft), color 0.3s var(--ease-soft);
 }
@@ -977,7 +987,7 @@ textarea:focus-visible {
 }
 .faq-accordion .accordion-button:focus { box-shadow: none; border-color: var(--card-line); }
 .faq-accordion .accordion-button::after { filter: hue-rotate(0deg); }
-.faq-accordion .accordion-body { color: var(--card-body); font-size: 0.95rem; line-height: 1.6; padding: 4px 24px 22px; }
+.faq-accordion .accordion-body { color: var(--card-body); font-size: 1.01rem; line-height: 1.6; padding: 4px 24px 22px; }
 
 /* ---------------------------------------------------------------------
    12. SEO CASE STUDIES
@@ -1014,14 +1024,14 @@ textarea:focus-visible {
 .seo-case-images img:hover { opacity: 0.85; }
 .seo-case-body { padding: 22px 24px 26px; }
 .seo-case-body h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; color: var(--navy-900); margin-bottom: 8px; }
-.seo-case-body p { color: var(--card-body); font-size: 0.92rem; line-height: 1.55; margin-bottom: 16px; }
+.seo-case-body p { color: var(--card-body); font-size: 0.98rem; line-height: 1.55; margin-bottom: 16px; }
 .seo-stats { display: flex; flex-wrap: wrap; gap: 8px; }
 .seo-stat {
   background: rgba(255, 140, 0, 0.1);
   color: #b35f00;
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.87rem;
   padding: 6px 12px;
   border-radius: 30px;
   border: 1px solid rgba(255, 140, 0, 0.28);
@@ -1071,7 +1081,7 @@ textarea:focus-visible {
   gap: 6px;
   padding: 10px 26px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   color: var(--white);
   text-decoration: none;
   border-radius: 50px;
@@ -1118,7 +1128,7 @@ textarea:focus-visible {
 }
 .achievements-band > .container { position: relative; z-index: 1; }
 .achievement { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.2rem, 6vw, 3.4rem); color: var(--amber-500); }
-.achievement-desc { color: rgba(255,255,255,0.72); font-size: 0.95rem; margin-top: 6px; font-family: var(--font-mono); letter-spacing: 0.03em; }
+.achievement-desc { color: rgba(255,255,255,0.72); font-size: 1.01rem; margin-top: 6px; font-family: var(--font-mono); letter-spacing: 0.03em; }
 
 /* ---------------------------------------------------------------------
    15. TESTIMONIALS
@@ -1142,7 +1152,7 @@ textarea:focus-visible {
   text-align: center;
   color: var(--slate-light);
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.87rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 0 6px;
@@ -1164,11 +1174,11 @@ textarea:focus-visible {
   flex-direction: column;
   justify-content: space-between;
 }
-.testimonial-stars { color: var(--amber-500); font-size: 16px; letter-spacing: 3px; margin-bottom: 14px; }
-.testimonial-item p { color: var(--card-body); font-size: 0.94rem; line-height: 1.6; margin-bottom: 18px; }
+.testimonial-stars { color: var(--amber-500); font-size: 19px; letter-spacing: 3px; margin-bottom: 14px; }
+.testimonial-item p { color: var(--card-body); font-size: 1.0rem; line-height: 1.6; margin-bottom: 18px; }
 .testimonial-footer { border-top: 1px solid var(--card-line); padding-top: 12px; }
 .testimonial-name { font-family: var(--font-display); font-weight: 700; color: var(--navy-900); font-size: 1.05rem; margin: 0; font-style: normal; }
-.testimonial-footer span { color: var(--card-muted); font-size: 0.82rem; }
+.testimonial-footer span { color: var(--card-muted); font-size: 0.91rem; }
 .testimonial-carousel::-webkit-scrollbar { height: 6px; }
 .testimonial-carousel::-webkit-scrollbar-thumb { background: #c7cedb; border-radius: 10px; }
 .carousel-nav { display: flex; gap: 10px; justify-content: center; margin-top: 8px; }
@@ -1223,7 +1233,7 @@ textarea:focus-visible {
 .contact-highlight-text .label {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--card-muted);
@@ -1233,7 +1243,7 @@ textarea:focus-visible {
 .contact-highlight-text span.value {
   font-weight: 700;
   color: var(--navy-900);
-  font-size: 0.98rem;
+  font-size: 1.04rem;
   text-decoration: none;
 }
 .contact-highlight-text a:hover { color: var(--amber-500); }
@@ -1244,7 +1254,7 @@ textarea:focus-visible {
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(11, 37, 69, 0.08);
 }
-.contact-form-panel .form-label { font-weight: 600; color: var(--navy-900); font-size: 0.88rem; }
+.contact-form-panel .form-label { font-weight: 600; color: var(--navy-900); font-size: 0.97rem; }
 .contact-form-panel .form-control {
   background: var(--white);
   color: var(--navy-950);
@@ -1287,7 +1297,7 @@ textarea:focus-visible {
   transform: translateY(-3px);
   box-shadow: 0 14px 30px rgba(255, 140, 0, 0.3);
 }
-.form-hint { color: var(--card-muted); font-size: 0.8rem; margin-top: 10px; text-align: center; }
+.form-hint { color: var(--card-muted); font-size: 0.89rem; margin-top: 10px; text-align: center; }
 
 /* ---------------------------------------------------------------------
    17. FOOTER
@@ -1296,7 +1306,7 @@ footer.site-footer {
   background: var(--navy-950);
   color: rgba(255, 255, 255, 0.6);
   padding: 48px 0 24px;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .footer-top {
@@ -1316,7 +1326,7 @@ footer.site-footer {
   color: var(--white);
 }
 .footer-brand .footer-logo .dot { color: var(--amber-500); }
-.footer-brand p { margin: 6px 0 0; max-width: 40ch; color: rgba(255, 255, 255, 0.55); font-size: 0.88rem; }
+.footer-brand p { margin: 6px 0 0; max-width: 40ch; color: rgba(255, 255, 255, 0.55); font-size: 0.97rem; }
 .footer-social { display: flex; gap: 10px; }
 .footer-social a {
   width: 40px;
@@ -1336,7 +1346,7 @@ footer.site-footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
-  font-size: 0.85rem;
+  font-size: 0.94rem;
 }
 footer.site-footer a { color: var(--amber-500); text-decoration: none; }
 footer.site-footer a:hover { text-decoration: underline; }
@@ -1407,7 +1417,7 @@ footer.site-footer a:hover { text-decoration: underline; }
   gap: 8px;
   color: var(--white);
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -1454,7 +1464,7 @@ footer.site-footer a:hover { text-decoration: underline; }
   text-align: center;
   color: rgba(255, 255, 255, 0.55);
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.91rem;
   letter-spacing: 0.04em;
   margin-bottom: 18px;
 }
@@ -1488,7 +1498,7 @@ footer.site-footer a:hover { text-decoration: underline; }
   gap: 6px;
   color: var(--amber-500);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   text-decoration: none;
   margin-bottom: 8px;
 }
