@@ -315,6 +315,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var text = encodeURIComponent(lines.join('\n'));
       var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + text;
+      gaEvent('contact_form_submit', { form_subject: subject || 'not specified' });
       window.open(url, '_blank');
     });
   }
