@@ -951,6 +951,23 @@ textarea:focus-visible {
   transition: gap 0.25s var(--ease), color 0.25s var(--ease);
 }
 .work-case-link:hover { color: var(--amber-500); gap: 10px; }
+.work-case-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: rgba(71, 85, 105, 0.65);
+  font-style: italic;
+}
+.work-case-note::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(71, 85, 105, 0.4);
+  flex-shrink: 0;
+}
 @media (max-width: 575.98px) {
   .work-case .image-container { height: 250px; --ic-height: 250px; }
 }
@@ -1165,7 +1182,6 @@ textarea:focus-visible {
   -webkit-mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
   mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
 }
-.marquee-mask { overflow: visible; }
 .testimonial-carousel {
   display: flex;
   overflow-x: auto;
