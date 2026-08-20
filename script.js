@@ -233,28 +233,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ---------------------------------------------------------------
      7. SEO CASE STUDY LIGHTBOX
+     Fully unobtrusive: no onclick="" attributes live in the HTML,
+     every click is wired up here via addEventListener instead.
      --------------------------------------------------------------- */
-  window.openSeoLightbox = function (src, alt) {
-    var overlay = document.getElementById('seoLightboxOverlay');
-    var img = document.getElementById('seoLightboxImg');
-    if (!overlay || !img) return;
-    img.src = src;
-    img.alt = alt;
-    overlay.classList.add('active');
+  var seoLightboxOverlay = document.getElementById('seoLightboxOverlay');
+  var seoLightboxImg = document.getElementById('seoLightboxImg');
+  var seoLightboxClose = document.querySelector('.seo-lightbox-close');
+
+  function openSeoLightbox(src, alt) {
+    if (!seoLightboxOverlay || !seoLightboxImg) return;
+    seoLightboxImg.src = src;
+    seoLightboxImg.alt = alt;
+    seoLightboxOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
-  };
-  window.closeSeoLightbox = function (e) {
-    if (e.target.id === 'seoLightboxOverlay' || e.target.classList.contains('seo-lightbox-close')) {
-      document.getElementById('seoLightboxOverlay').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  };
+  }
+  function closeSeoLightbox() {
+    if (!seoLightboxOverlay) return;
+    seoLightboxOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.seo-case-images img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      openSeoLightbox(img.src, img.alt);
+    });
+  });
+  if (seoLightboxOverlay) {
+    seoLightboxOverlay.addEventListener('click', function (e) {
+      if (e.target === seoLightboxOverlay) closeSeoLightbox();
+    });
+  }
+  if (seoLightboxClose) {
+    seoLightboxClose.addEventListener('click', closeSeoLightbox);
+  }
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      var overlay = document.getElementById('seoLightboxOverlay');
-      if (overlay) overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    if (e.key === 'Escape') closeSeoLightbox();
   });
 
   /* ---------------------------------------------------------------
@@ -268,18 +281,6 @@ document.addEventListener('DOMContentLoaded', function () {
       clone.setAttribute('aria-hidden', 'true');
       marqueeTrack.appendChild(clone);
     });
-  }
-
-  /* ---------------------------------------------------------------
-     8B. ANALYTICS EVENT HELPER
-     Small wrapper so every tracked click below fails silently if
-     gtag isn't loaded (ad blocker, offline, etc), instead of
-     throwing an error that could break the rest of the page.
-     --------------------------------------------------------------- */
-  function gaEvent(name, params) {
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', name, params || {});
-    }
   }
 
   /* ---------------------------------------------------------------
@@ -314,7 +315,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var text = encodeURIComponent(lines.join('\n'));
       var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + text;
-      gaEvent('contact_form_submit', { form_subject: subject || 'not specified' });
       window.open(url, '_blank');
     });
   }
@@ -328,8 +328,8 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------------------------------------------------------------
      11. MAGNETIC BUTTON HOVER (CTA buttons only, lightweight)
      --------------------------------------------------------------- */
-  var magneticEls = document.querySelectorAll('.social-btn, .btn-send, .custom-btn');
-  magneticEls.forEach(function (el) {
+  var magneticEls2 = document.querySelectorAll('.social-btn, .btn-send, .custom-btn');
+  magneticEls2.forEach(function (el) {
     el.addEventListener('mousemove', function (e) {
       var rect = el.getBoundingClientRect();
       var x = e.clientX - rect.left - rect.width / 2;
@@ -348,6 +348,17 @@ document.addEventListener('DOMContentLoaded', function () {
      opens a project / blog article. Every listener uses gaEvent(),
      which fails silently if gtag isn't available.
      --------------------------------------------------------------- */
+
+  // Safe wrapper around gtag(). Never throws, even if GA4 hasn't loaded yet.
+  function gaEvent(eventName, params) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, params || {});
+      }
+    } catch (err) {
+      // fail silently, never break the page for a tracking issue
+    }
+  }
 
   // WhatsApp clicks: hero social button, sticky button, footer icon, all match wa.me links
   document.querySelectorAll('a[href*="wa.me"]').forEach(function (el) {
